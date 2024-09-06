@@ -4,6 +4,15 @@
 
 **OptiReserve** is a cutting-edge reservation management system designed to maximize efficiency and streamline the booking process. The system features a modern user interface, a powerful backend, and comprehensive analytics.
 
+## Features
+
+- **User Management**: Registration, login, and profile management.
+- **Reservation Management**: Create, update, view, and cancel reservations.
+- **Real-Time Analytics**: Access detailed reports and trends on reservation data.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **User-Friendly Interface**: Intuitive design for easy navigation and management.
+
+
 ## Project Structure
 
 The project is divided into the following main directories and files:
