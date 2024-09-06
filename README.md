@@ -2,31 +2,92 @@
 
 ## Overview
 
-**OptiReserve** is an advanced reservation management system designed for optimal booking efficiency and user satisfaction. It combines a sleek user interface with a powerful backend to handle reservations, view analytics, and manage user data seamlessly.
-
-## Features
-
-- **User Management**: Registration, login, and profile management.
-- **Reservation Management**: Create, update, view, and cancel reservations.
-- **Real-Time Analytics**: Access detailed reports and trends on reservation data.
-- **Responsive Design**: Optimized for both desktop and mobile devices.
-- **User-Friendly Interface**: Intuitive design for easy navigation and management.
-
-OptiReserve/ │ ├── frontend/ │ ├── public/ │ │ └── index.html │ ├── src/ │ │ ├── components/ │ │ │ ├── Dashboard.jsx │ │ │ ├── Reports.jsx │ │ │ └── ReservationForm.jsx │ │ ├── App.jsx │ │ ├── index.js │ │ └── styles.css │ ├── package.json │ └── README.md │ ├── backend/ │ ├── src/ │ │ ├── main/ │ │ │ ├── java/ │ │ │ │ └── com/ │ │ │ │ └── optireserve/ │ │ │ │ ├── OptiReserveApplication.java │ │ │ │ ├── controller/ │ │ │ │ │ └── ReservationController.java │ │ │ │ ├── model/ │ │ │ │ │ └── Reservation.java │ │ │ │ ├── repository/ │ │ │ │ │ └── ReservationRepository.java │ │ │ │ └── service/ │ │ │ │ └── ReservationService.java │ ├── resources/ │ │ ├── application.properties │ │ ├── schema.sql │ │ └── triggers.sql │ ├── pom.xml │ └── README.md │ ├── python-backend/ │ ├── analytics/ │ │ ├── init.py │ │ ├── analysis.py │ │ ├── data_fetcher.py │ │ └── visualization.py │ ├── requirements.txt │ └── README.md │ └── LICENSE
+**OptiReserve** is a cutting-edge reservation management system designed to maximize efficiency and streamline the booking process. The system features a modern user interface, a powerful backend, and comprehensive analytics.
 
 ## Project Structure
 
-The project is divided into the following main components:
+The project is divided into the following main directories and files:
 
+### Frontend
+
+**Directory:** `frontend/`
+
+- **`public/index.html`**: The entry point for the React application. It includes the root HTML structure and links to CSS and JavaScript files.
+ 
+- **`src/components/Dashboard.jsx`**: A React component responsible for rendering the dashboard. It displays various metrics and stats related to reservations.
+
+- **`src/components/Reports.jsx`**: A React component that handles the display and interaction with reservation reports and analytics.
+
+- **`src/components/ReservationForm.jsx`**: This component provides a form for users to create and manage their reservations.
+
+- **`src/App.jsx`**: The root component that integrates other components and sets up routing within the application.
+
+- **`src/index.js`**: The main JavaScript file where the React application is initialized and rendered to the DOM.
+
+- **`src/styles.css`**: A global CSS stylesheet that defines the styling for the entire React application.
+
+- **`package.json`**: Contains metadata about the project including dependencies, scripts, and configuration for the React application.
+
+- **`README.md`**: This file provides an overview and documentation for setting up and using the frontend portion of the project.
+
+### Backend
+
+**Directory:** `backend/`
+
+- **`src/main/java/com/optireserve/OptiReserveApplication.java`**: The primary Spring Boot application class that serves as the entry point for the backend server.
+
+- **`src/main/java/com/optireserve/controller/ReservationController.java`**: Defines RESTful endpoints for managing reservations. Handles HTTP requests and responses related to reservation operations.
+
+- **`src/main/java/com/optireserve/model/Reservation.java`**: The entity class that represents a reservation in the system. Defines the structure and relationships of reservation data.
+
+- **`src/main/java/com/optireserve/repository/ReservationRepository.java`**: Provides CRUD operations for reservations. Interfaces with the database to perform data manipulation.
+
+- **`src/main/java/com/optireserve/service/ReservationService.java`**: Contains business logic related to reservations. Interacts with the repository and processes data for the controllers.
+
+- **`src/main/resources/application.properties`**: Configuration file for Spring Boot application settings, including database connections and other properties.
+
+- **`src/main/resources/schema.sql`**: SQL script for setting up the initial database schema, including tables and relationships.
+
+- **`src/main/resources/triggers.sql`**: SQL script for creating database triggers that enforce certain rules or automations in the database.
+
+- **`pom.xml`**: Maven build configuration file that manages project dependencies and build lifecycle for the Java application.
+
+- **`README.md`**: Provides documentation and setup instructions for the backend portion of the project.
+
+
+### Python Analytics
+
+**Directory:** `python-backend/`
+
+- **`analytics/__init__.py`**: Initialization file for the analytics package, allowing it to be treated as a module.
+
+- **`analytics/analysis.py`**: Contains functions and logic for analyzing reservation data and generating insights.
+
+- **`analytics/data_fetcher.py`**: Responsible for fetching and preparing data for analysis from the database or other sources.
+
+- **`analytics/visualization.py`**: Includes functions for visualizing analytical data through charts and graphs.
+
+- **`requirements.txt`**: Lists the Python dependencies required for running the analytics services.
+
+- **`README.md`**: Documentation for setting up and running the Python analytics services.
+
+### License and Contact
+
+- **`LICENSE`**: Contains the licensing information for the project.
+
+- **`README.md`**: This file provides an overview and documentation for the project, including setup, usage, and contact information.
 
 ## Installation
 
 ### Prerequisites
 
-- **Node.js**: For running the frontend.
-- **Java JDK**: For the backend.
-- **Python**: For analytics services.
-- **PostgreSQL**: For the database.
+- **Node.js**: Required for running the frontend.
+
+- **Java JDK**: Required for the backend.
+
+- **Python**: Required for analytics services.
+
+- **PostgreSQL**: Required for the database.
 
 ### Frontend Setup
 
@@ -126,5 +187,4 @@ We welcome contributions to improve OptiReserve. To contribute:
     ```
 
 6. **Open a Pull Request**: Go to the original repository and click on "New Pull Request".
-
 
