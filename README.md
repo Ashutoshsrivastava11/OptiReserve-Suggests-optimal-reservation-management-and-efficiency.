@@ -1,3 +1,21 @@
+# OptiReserve
+
+## Overview
+
+**OptiReserve** is an advanced reservation management system designed for optimal booking efficiency and user satisfaction. It combines a sleek user interface with a powerful backend to handle reservations, view analytics, and manage user data seamlessly.
+
+## Features
+
+- **User Management**: Registration, login, and profile management.
+- **Reservation Management**: Create, update, view, and cancel reservations.
+- **Real-Time Analytics**: Access detailed reports and trends on reservation data.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **User-Friendly Interface**: Intuitive design for easy navigation and management.
+
+## Project Structure
+
+The project is divided into the following main components:
+
 
 ## Installation
 
@@ -110,10 +128,3 @@ We welcome contributions to improve OptiReserve. To contribute:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any inquiries or support, please contact:
-
-- **Email**: support@optitreserve.com
-- **Phone**: +1 234 567 890
