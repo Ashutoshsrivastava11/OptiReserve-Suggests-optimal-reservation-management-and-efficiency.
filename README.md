@@ -12,6 +12,8 @@
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 - **User-Friendly Interface**: Intuitive design for easy navigation and management.
 
+OptiReserve/ │ ├── frontend/ │ ├── public/ │ │ └── index.html │ ├── src/ │ │ ├── components/ │ │ │ ├── Dashboard.jsx │ │ │ ├── Reports.jsx │ │ │ └── ReservationForm.jsx │ │ ├── App.jsx │ │ ├── index.js │ │ └── styles.css │ ├── package.json │ └── README.md │ ├── backend/ │ ├── src/ │ │ ├── main/ │ │ │ ├── java/ │ │ │ │ └── com/ │ │ │ │ └── optireserve/ │ │ │ │ ├── OptiReserveApplication.java │ │ │ │ ├── controller/ │ │ │ │ │ └── ReservationController.java │ │ │ │ ├── model/ │ │ │ │ │ └── Reservation.java │ │ │ │ ├── repository/ │ │ │ │ │ └── ReservationRepository.java │ │ │ │ └── service/ │ │ │ │ └── ReservationService.java │ ├── resources/ │ │ ├── application.properties │ │ ├── schema.sql │ │ └── triggers.sql │ ├── pom.xml │ └── README.md │ ├── python-backend/ │ ├── analytics/ │ │ ├── init.py │ │ ├── analysis.py │ │ ├── data_fetcher.py │ │ └── visualization.py │ ├── requirements.txt │ └── README.md │ └── LICENSE
+
 ## Project Structure
 
 The project is divided into the following main components:
